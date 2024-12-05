@@ -35,7 +35,7 @@ func main() {
 func printDevicesTable(devices []Device) {
 	fmt.Println("Alle Geräte gelöscht am 05.12.2024 von 10:00 bis 14:30 Uhr\n\n")
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"Manufacturer", "Computer", "ComputerSerialNumber", "Drive", "DriveSerialNumber"})
+	table.SetHeader([]string{"Manufacturer", "Computer", "Computer-Serial-Number", "Drive", "Drive-Serial-Number"})
 	table.SetAutoWrapText(false)
 	table.SetAlignment(tablewriter.ALIGN_LEFT)
 	for _, device := range devices {
